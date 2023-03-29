@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "TelrReactSDK",
+    "slug": "TelrReactSDK",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "TelrReactSDK"
+}
