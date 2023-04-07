@@ -1,0 +1,1 @@
+# Telr-React-Native-SDK
