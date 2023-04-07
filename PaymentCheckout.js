@@ -10,7 +10,7 @@ const removeSubscriptions = () => {
     telrpayEvents.removeAllListeners('Telrpay::EXTERNAL_WALLET_SELECTED');
 };
 
-class TelrPayCheckout {
+class PaymentCheckout {
     static open(options, successCallback, errorCallback) {
         return new Promise(function (resolve, reject) {
             telrpayEvents.addListener('Telrpay::PAYMENT_SUCCESS', (data) => {
@@ -28,9 +28,9 @@ class TelrPayCheckout {
                 rejectFn(data);
                 removeSubscriptions();
             });
-            NativeModules.RNTelrPayCheckout.open(options);
+            NativeModules.RNPaymentCheckout.open(options);
         });
     }
 }
 
-export default TelrPayCheckout;
+export default PaymentCheckout;

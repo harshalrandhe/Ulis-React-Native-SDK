@@ -1,10 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { TouchableHighlight } from 'react-native';
-import { StyleSheet, Text, View } from 'react-native';
-import TelrPayCheckout from './TelrCheckout';
+import { StyleSheet, Text, TouchableHighlight, View } from 'react-native';
+import PaymentCheckout from './PaymentCheckout';
 
 export default function App() {
+
   return (
     <View style={styles.container}>
 
@@ -13,6 +13,7 @@ export default function App() {
         onPress={() => {
 
           var options = {
+            env: "dev",
             merchantKey: "live-FP0RSX366",
             merchantSecret: "sec-FB0VLA3E8",
             customer_details: {
@@ -45,7 +46,7 @@ export default function App() {
               province: "Maharastra"
             },
             order_details: {
-              order_id: "ORD1680084434213",
+              order_id: "ORD1680852760317",
               amount: "366.45",
               currency: "AED",
               description: "TShirt",
@@ -58,16 +59,19 @@ export default function App() {
             },
           }
 
-          TelrPayCheckout.open(options).then((data) => {
+          PaymentCheckout.open(options).then((data) => {
+
             // handle success
             console.log("Error: ", data)
             alert(`Success: ${data}`);
+
           }).catch((error) => {
+
             // handle failure
             console.log("Error: ", error)
             alert(`Error: ${error.description} `);
-          });
 
+          });
         }}
       >
         <Text>PAY</Text>

@@ -1,13 +1,19 @@
 {
-  "name": "telrreactsdk",
+  "name": "ulisreactsdk",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "start": "expo start --dev-client",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
-    "web": "expo start --web"
+  "package-name": "rn-ulis-sdk",
+  "keywords": [
+    "react-native, android, ulis"
+  ],
+  "repository": "https://github.com/harshalrandhe/Telr-React-Native-SDK.git",
+  "author": "Telr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harshalrandhe/Telr-React-Native-SDK.git/issues"
   },
+  "homepage": "https://github.com/harshalrandhe/Telr-React-Native-SDK.git#readme",
+  "description": "Our mission is to build connections that remove fragmentation in the e-commerce ecosystem. We make these connections to enable our customers to go cashless, digitising the way that they accept payments",
   "dependencies": {
     "expo": "~48.0.9",
     "expo-splash-screen": "~0.18.1",

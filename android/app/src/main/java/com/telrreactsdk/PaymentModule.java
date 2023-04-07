@@ -17,22 +17,17 @@ import com.ulisfintech.telrpay.helper.PaymentData;
 import com.ulisfintech.telrpay.helper.SyncMessage;
 import com.ulisfintech.telrpay.ui.Gateway;
 import com.ulisfintech.telrpay.ui.GatewaySecureCallback;
-import com.ulisfintech.telrpay.ui.order.BillingDetails;
-import com.ulisfintech.telrpay.ui.order.CustomerDetails;
-import com.ulisfintech.telrpay.ui.order.ProductDetails;
-import com.ulisfintech.telrpay.ui.order.ShippingDetails;
 
 import org.json.JSONObject;
 
 
-public class TelrpayModule extends ReactContextBaseJavaModule implements ActivityEventListener, GatewaySecureCallback {
-
+public class PaymentModule extends ReactContextBaseJavaModule implements ActivityEventListener, GatewaySecureCallback {
 
     public static final String MAP_KEY_ERROR_CODE = "code";
     public static final String MAP_KEY_ERROR_DESC = "description";
     ReactApplicationContext reactContext;
 
-    public TelrpayModule(ReactApplicationContext reactContext) {
+    public PaymentModule(ReactApplicationContext reactContext) {
         super(reactContext);
         this.reactContext = reactContext;
         reactContext.addActivityEventListener(this);
@@ -40,7 +35,7 @@ public class TelrpayModule extends ReactContextBaseJavaModule implements Activit
 
     @Override
     public String getName() {
-        return "RNTelrPayCheckout";
+        return "RNPaymentCheckout";
     }
 
     @ReactMethod
