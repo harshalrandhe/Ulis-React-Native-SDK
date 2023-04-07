@@ -1,1 +1,1 @@
-# Telr-React-Native-SDK
+# Ulis-React-Native-SDK

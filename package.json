@@ -1,18 +1,21 @@
 {
-  "name": "ulisreactsdk",
+  "name": "rn-ulis-sdk",
   "version": "1.0.0",
   "main": "index.js",
   "package-name": "rn-ulis-sdk",
   "keywords": [
     "react-native, android, ulis"
   ],
-  "repository": "https://github.com/harshalrandhe/Telr-React-Native-SDK.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshalrandhe/Ulis-React-Native-SDK.git"
+  },
   "author": "Telr",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/harshalrandhe/Telr-React-Native-SDK.git/issues"
+    "url": "https://github.com/harshalrandhe/Ulis-React-Native-SDK.git/issues"
   },
-  "homepage": "https://github.com/harshalrandhe/Telr-React-Native-SDK.git#readme",
+  "homepage": "https://github.com/harshalrandhe/Ulis-React-Native-SDK.git#readme",
   "description": "Our mission is to build connections that remove fragmentation in the e-commerce ecosystem. We make these connections to enable our customers to go cashless, digitising the way that they accept payments",
   "dependencies": {
     "expo": "~48.0.9",
@@ -24,5 +27,8 @@
   "devDependencies": {
     "@babel/core": "^7.20.0"
   },
-  "private": true
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
